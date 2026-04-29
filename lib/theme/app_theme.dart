@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  // Monochrome palette with a single warm accent
-  static const Color ink = Color(0xFF0D0D0D);
-  static const Color paper = Color(0xFFF5F2ED);
-  static const Color muted = Color(0xFF8C8880);
-  static const Color border = Color(0xFFDDD9D3);
-  static const Color accent = Color(0xFFD4550A); // burnt orange
-  static const Color accentLight = Color(0xFFFFF1EA);
+  // Gemini palette with Google's signature blue accent
+  static const Color ink = Color(0xFF202124);
+  static const Color paper = Color(0xFFF8F9FC);
+  static const Color muted = Color(0xFF5F6368);
+  static const Color border = Color(0xFFE1E3E8);
+  static const Color accent = Color(0xFF4285F4); // Google Blue
+  static const Color accentLight = Color(0xFFE8F0FE);
   static const Color white = Color(0xFFFFFFFF);
 
   static ThemeData get theme {
@@ -23,30 +23,30 @@ class AppTheme {
         onSurface: ink,
       ),
       textTheme: GoogleFonts.ibmPlexMonoTextTheme().copyWith(
-        displayLarge: GoogleFonts.playfairDisplay(
+        displayLarge: GoogleFonts.averageSans(
           fontSize: 32,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w500,
           color: ink,
           letterSpacing: -0.5,
         ),
-        titleLarge: GoogleFonts.playfairDisplay(
+        titleLarge: GoogleFonts.averageSans(
           fontSize: 20,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w500,
           color: ink,
         ),
-        bodyLarge: GoogleFonts.ibmPlexMono(
+        bodyLarge: GoogleFonts.averageSans(
           fontSize: 14,
           color: ink,
           height: 1.6,
         ),
-        bodyMedium: GoogleFonts.ibmPlexMono(
+        bodyMedium: GoogleFonts.averageSans(
           fontSize: 13,
           color: muted,
           height: 1.5,
         ),
-        labelLarge: GoogleFonts.ibmPlexMono(
+        labelLarge: GoogleFonts.averageSans(
           fontSize: 12,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w500,
           letterSpacing: 1.2,
           color: ink,
         ),
@@ -67,7 +67,7 @@ class AppTheme {
           borderSide: const BorderSide(color: ink, width: 1.5),
         ),
         contentPadding: const EdgeInsets.all(16),
-        hintStyle: GoogleFonts.ibmPlexMono(
+        hintStyle: GoogleFonts.averageSans(
           fontSize: 13,
           color: muted,
         ),
